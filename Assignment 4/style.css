@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C2B9B0;
+}
+  
+header {
+    background-color: #7e685A;
+    text-align: center;
+    padding: 20px 0;
+}
+  
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+  
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #E7717D;
+}
+  
+main {
+    padding: 20px;
+}
+  
+.card {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #C2B9B0;
+}
+  
+footer {
+    text-align: center;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Checkbox container */
+.checkbox-container {
+    margin-bottom: 15px;
+}
+  
+.checkbox-container label {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+  
+.checkbox-container input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #AFD275; 
+    border: 1px solid #7E685A; 
+    border-radius: 3px;
+}
+
+.checkbox-container input[type="checkbox"]:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #E7717D;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* Radio button input styles */
+.radio-container input[type="radio"] {
+    margin-right: 5px;
+}
+.radio-container input[type="radio"]::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.radio-container input[type="radio"]:checked::before {
+    background-color: #E7717D; 
+}
+
+
+input[type="text"]:focus,
+    select:focus {
+  outline: none;
+  border-color: #E7717D; 
+}
+
+/* Dropdown styles */
+.dropdown-select {
+    position: relative;
+    width: 100%;
+  }
+  
+/* Styling the select element */
+.dropdown-select select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AFD275; 
+    border-radius: 4px;
+    appearance: none; 
+    background-color: #C2B9B0; 
+    cursor: pointer;
+}
+  
+/* Styling the arrow for the dropdown */
+.dropdown-select::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: calc(50% - 6px);
+    right: 10px;
+    pointer-events: none;
+}
+  
+/* Styling the dropdown options */
+.dropdown-select select option {
+    padding: 10px;
+}
+.dropdown-select select option:hover {
+    background-color: #E7717D; 
+    color: white; 
+}
+button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+/* Primary button styles */
+    .primary-btn {
+    background-color: #E7717D;
+}
+  
+.primary-btn:hover {
+    background-color: #AFD275;
+}
+  
+.primary-btn:active {
+    background-color: #C24954;
+}
+  
+/* Secondary button styles */
+.secondary-btn {
+    background-color: #AFD275;
+    color: white;
+}
+  
+.secondary-btn:hover {
+    background-color: #A09288;
+}
+  
+.secondary-btn:active {
+    background-color: #5B4F47;
+}
+  
+/* Tertiary button styles */
+.tertiary-btn {
+    background-color: #5B4F47;
+    color: #333;
+}
+  
+.tertiary-btn:hover {
+    background-color: #C24954;
+}
+  
+.tertiary-btn:active {
+    background-color: #AFD275;
+}
